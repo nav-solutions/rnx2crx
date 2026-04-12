@@ -1,23 +1,23 @@
 RNX2CRX
 =======
 
-[![Rust](https://github.com/rtk-rs/rnx2crx/actions/workflows/rust.yml/badge.svg)](https://github.com/rtk-rs/rnx2crx/actions/workflows/rust.yml)
-[![Rust](https://github.com/rtk-rs/rnx2crx/actions/workflows/daily.yml/badge.svg)](https://github.com/rtk-rs/rnx2crx/actions/workflows/daily.yml)
+[![Rust](https://github.com/nav-solutions/rnx2crx/actions/workflows/rust.yml/badge.svg)](https://github.com/nav-solutions/rnx2crx/actions/workflows/rust.yml)
+[![Rust](https://github.com/nav-solutions/rnx2crx/actions/workflows/daily.yml/badge.svg)](https://github.com/nav-solutions/rnx2crx/actions/workflows/daily.yml)
 [![crates.io](https://img.shields.io/crates/v/rnx2crx.svg)](https://crates.io/crates/rnx2crx)
+[![discord server](https://img.shields.io/discord/1342922474110586910?logo=discord)](https://discord.gg/EqhEBXBmJh)
 
-[![License](https://img.shields.io/badge/license-MPL_2.0-orange?style=for-the-badge&logo=mozilla)](https://github.com/rtk-rs/rnx2crx/blob/main/LICENSE)
+[![MRSV](https://img.shields.io/badge/MSRV-1.89.0-orange?style=for-the-badge)](https://github.com/rust-lang/rust/releases/tag/1.89.0)
+[![License](https://img.shields.io/badge/license-MPL_2.0-orange?style=for-the-badge&logo=mozilla)](https://github.com/nav-solutions/rnx2crx/blob/main/LICENSE)
 
 `rnx2crx` is a small command line utility to compress
 your RINEX files to CRINEX (Compact RINEX) files. It is modern
 replacement of the historical tool.
 
-This tool is based on the [GeoRust/RINEX parser](https://github.com/georust/rinex).
-
-:warning: this tool is work in progress
+:warning: this tool is less stabilized than our [CRX2RNX tool](https://github.com/nav-solutions/crx2rnx)
 
 ## Download the tool
 
-You can download the latest version from [the release portal](https://github.com/rtk-rs/rnx2crx/releases)
+You can download the latest version from [the release portal](https://github.com/nav-solutions/rnx2crx/releases)
 
 ## Install from Cargo
 
@@ -32,7 +32,7 @@ cargo install rnx2crx
 Download the version you are interested in:
 
 ```bash
-git clone https://github.com/rtk-rs/rnx2crx
+git clone https://github.com/nav-solutions/rnx2crx
 ```
 
 And build it using cargo:
@@ -124,7 +124,6 @@ crx2rnx -q -d 2000-01-01 -t 01:02:03 ESBC00DNK_R_20201770000_01D_30S_MO.crx.gz
 
 When Time is specified without Date, we use the date retrieved from system time and replace the time during that day.
 
-## Licensing
+## License
 
-This application is part of the [RTK-rs framework](https://github.com/rtk-rs) which
-is delivered under the [Mozilla V2 Public](https://www.mozilla.org/en-US/MPL/2.0) license.
+This application is released under the [Mozilla V2 Public](https://www.mozilla.org/en-US/MPL/2.0) license.  
