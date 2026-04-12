@@ -1,6 +1,6 @@
 [package]
 name = "rnx2crx"
-version = "1.6.0"
+version = "1.7.0"
 license = "MPL-2.0"
 authors = ["Guillaume W. Bres <guillaume.bressaix@gmail.com>"]
 description = "RINEX compression command line utility"
@@ -8,9 +8,9 @@ homepage = "https://github.com/nav-solutions"
 repository = "https://github.com/nav-solutions/rnx2crx"
 keywords = ["geo", "compression"] 
 categories = ["science", "science::geo", "command-line-interface", "command-line-utilities"]
-edition = "2021"
+edition = "2024"
 readme = "README.md"
 
 [dependencies]
-rinex = { version = "0.22", features = ["flate2"] }
+rinex = { git = "https://github.com/nav-solutions/rinex", rev = "1a025eb090f49b4adb2804622cb74c4d1e8f51bf", features = ["flate2"] }
 clap = { version = "4.5", features = ["derive", "color"] }
