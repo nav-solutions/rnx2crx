@@ -13,6 +13,9 @@ RNX2CRX
 your RINEX files to CRINEX (Compact RINEX) files. It is modern
 replacement of the historical tool.
 
+This tool uses our [RINEX parser](https://github.com/nav-solutions/rinex) which integrates
+an implementation of the CRINEX algorithm.
+
 :warning: this tool is less stabilized than our [CRX2RNX tool](https://github.com/nav-solutions/crx2rnx)
 
 ## Download the tool
